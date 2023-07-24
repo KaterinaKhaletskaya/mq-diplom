@@ -9,11 +9,53 @@
 </head>
 
 <body>
+
+  <div class="popup _hidden">
+    <div class="popup-content">
+      <button class="popup-clode">x</button>
+      <h2 class="subtitle-block">Ваш фитбек</h2>
+      <form action="">
+        <div class="question-block">
+          <p class="question">Как часто вы заходите на сайт?</p>
+          <select class="select">
+            <option value="everyday" selected>Почти каждый день</option>
+          </select>
+        </div>
+
+        <div class="question-block">
+          <p class="question">Вы подписаны на e-mail рассылку</p>
+          <label>
+            <input type="radio" class="checkbox" name="variant">
+            <span class="radio-button">Да</span>
+          </label>
+          <label>
+            <input type="radio" class="checkbox" name="variant">
+            <span class="radio-button">Нет</span>
+          </label>
+        </div>
+
+        <div class="question-block">
+          <p class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+          <textarea name="" class="pitch">Может, больше рецептов?</textarea>
+        </div>
+
+        <button id="button-fitback" class="button-subscription">Отправить
+          <span class="visually-hidden">Отправление формы</span>
+        </button>
+      </form>
+    </div>
+  </div>
   <header class="header">
     <div class="container">
       <div class="header-menu">
-        <a href="#0"><img src="svg\noemi-logo.svg" class="header-logo" alt="логотип"></a>
-        <nav class="menu burger">
+        <a href="#0">
+          <img src="svg\noemi-logo.svg" class="header-logo" alt="логотип">
+        </a>
+
+        <nav class="menu">
+          <button class="menu__button">
+            <span class="menu__button-label"></span>
+          </button>
           <ul class="menu-list">
             <li class="menu-list-item">
               <a class="menu-link" href="#0">Главная</a>
@@ -38,7 +80,9 @@
       </div>
     </div>
     <div class="welcome-title">
-      <h1>Блог о творчестве, спорте, и образе жизни</h1>
+      <a href="#"><img src="svg\noemi-logo.svg" class="logo-mobile" alt="логотип"></a>
+      <h1 class="intro">Блог о творчестве, спорте, и образе жизни</h1>
+
     </div>
   </header>
 
@@ -121,16 +165,15 @@
             <a href="#0">
               <h2 class="text-h2">10 мест, ради которых стоит проснуться на рассвете</h2>
             </a>
-            <div class="date-author">
-              <ul class="date-author-item">
-                <li class="date-author-link"><time>10 июня 2019</time></li>
-                <li class="date-author-link">
-                  <address>Неизвестный автор</address>
-                </li>
-              </ul>
-            </div>
+            <ul class="date-author-item">
+              <li class="date-author-link"><time>10 июня 2019</time></li>
+              <li class="date-author-link">
+                <address>Неизвестный автор</address>
+              </li>
+            </ul>
             <div class="about">
-              <p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще
+              <p class="text-page">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны
+                города… Музеи еще
                 закрыты. Что посмотреть?</p>
             </div>
           </div>
@@ -147,15 +190,14 @@
             <a href="#0">
               <h2 class="text-h2">ЙОга для начинающих в домашних условиях</h2>
             </a>
-            <div class="date-author">
-              <ul class="date-author-item">
-                <li class="date-author-link"><time>10 июня 2019</time></li>
-                <li class="date-author-link">
-                  <address>Неизвестный автор</address>
-                </li>
-              </ul>
-            </div>
-            <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в
+            <ul class="date-author-item">
+              <li class="date-author-link"><time>10 июня 2019</time></li>
+              <li class="date-author-link">
+                <address>Неизвестный автор</address>
+              </li>
+            </ul>
+            <p class="text-page">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что
+              можно найти в
               шкафу.</p>
           </div>
         </article>
@@ -170,16 +212,15 @@
             <a href="#0">
               <h2 class="text-h2">Лучшие музыкальные фестивали этого лета</h2>
             </a>
-            <div class="date-author">
-              <ul class="date-author-item">
-                <li class="date-author-link"><time>10 июня 2019</time></li>
-                <li class="date-author-link">
-                  <address>Неизвестный автор</address>
-                </li>
-              </ul>
-            </div>
-            <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-            <p>Мы составили список лучших летних фестивалей по всему миру.</p>
+            <ul class="date-author-item">
+              <li class="date-author-link"><time>10 июня 2019</time></li>
+              <li class="date-author-link">
+                <address>Неизвестный автор</address>
+              </li>
+            </ul>
+            <p class="text-page">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою
+              палатку?
+            <p class="text-page">Мы составили список лучших летних фестивалей по всему миру.</p>
             </p>
           </div>
         </article>
@@ -195,15 +236,14 @@
             <a href="#0">
               <h2 class="text-h2">Наукоёмкий подход к кулинарии</h2>
             </a>
-            <div class="date-author">
-              <ul class="date-author-item">
-                <li class="date-author-link"><time>10 июня 2019</time></li>
-                <li class="date-author-link">
-                  <address>Неизвестный автор</address>
-                </li>
-              </ul>
-            </div>
-            <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию
+            <ul class="date-author-item">
+              <li class="date-author-link"><time>10 июня 2019</time></li>
+              <li class="date-author-link">
+                <address>Неизвестный автор</address>
+              </li>
+            </ul>
+            <p class="text-page">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику,
+              химию и микробиологию
               еды.</p>
           </div>
         </article>
@@ -221,15 +261,14 @@
               <h2 class="text-h2">делаем модные принты на
                 подушках для интерьера </h2>
             </a>
-            <div class="date-author">
-              <ul class="date-author-item">
-                <li class="date-author-link"><time>10 июня 2019</time></li>
-                <li class="date-author-link">
-                  <address>Неизвестный автор</address>
-                </li>
-              </ul>
-            </div>
-            <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек,
+            <ul class="date-author-item">
+              <li class="date-author-link"><time>10 июня 2019</time></li>
+              <li class="date-author-link">
+                <address>Неизвестный автор</address>
+              </li>
+            </ul>
+            <p class="text-page">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется
+              чистка подушек,
               проще снять чехлы, чем везти подушку в химчистку.
             </p>
           </div>
@@ -246,15 +285,14 @@
             <a href="#0">
               <h2 class="text-h2">Как первый раз отправиться в горы? </h2>
             </a>
-            <div class="date-author">
-              <ul class="date-author-item">
-                <li class="date-author-link"><time>10 июня 2019</time></li>
-                <li class="date-author-link">
-                  <address>Неизвестный автор</address>
-                </li>
-              </ul>
-            </div>
-            <p>Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов,
+            <ul class="date-author-item">
+              <li class="date-author-link"><time>10 июня 2019</time></li>
+              <li class="date-author-link">
+                <address>Неизвестный автор</address>
+              </li>
+            </ul>
+            <p class="text-page">Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от
+              многих факторов,
               не только от ваших желаний и интересов.
             </p>
           </div>
@@ -271,16 +309,15 @@
             <a href="#0">
               <h2 class="text-h2">Лучшие музыкальные фестивали этого лета</h2>
             </a>
-            <div class="date-author">
-              <ul class="date-author-item">
-                <li class="date-author-link"><time>10 июня 2019</time></li>
-                <li class="date-author-link">
-                  <address>Неизвестный автор</address>
-                </li>
-              </ul>
-            </div>
-            <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-            <p>Мы составили список лучших летних фестивалей по всему миру.</p>
+            <ul class="date-author-item">
+              <li class="date-author-link"><time>10 июня 2019</time></li>
+              <li class="date-author-link">
+                <address>Неизвестный автор</address>
+              </li>
+            </ul>
+            <p class="text-page">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою
+              палатку?
+            <p class="text-page">Мы составили список лучших летних фестивалей по всему миру.</p>
             </p>
           </div>
         </article>
@@ -347,8 +384,9 @@
               <span class="hidden">Поле ввода</span>
               <input type="search" class="search-field" placeholder="Найти...">
             </label>
-            <span class="hidden">Кнопка поиска</span>
-            <button class="search-button"></button>
+            <button class="search-button">
+              <span class="hidden">Кнопка поиска</span>
+            </button>
           </form>
         </section>
 
@@ -357,6 +395,7 @@
 
           <form class="mailing-form">
             <label class="mailing-group">
+              <span class="hidden">Поле ввода</span>
               <input type="email" class="mailing-field" placeholder="Ваш email-адрес">
             </label>
             <button class="mailing-button"><span>подписаться</span></button>
@@ -428,12 +467,16 @@
     <div class="block-products">
 
       <div class="products">
-        <img class="product-img" src="images\shop-item-desk1.jpg" alt="Подушка">
-
+        <picture class="product-img">
+          <source srcset="images\shop-item-desk1.jpg" media="(min-width: 1200px)">
+          <source srcset="images\shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+          <img src="images\shop-item-mobile1.jpg" alt="Подушка">
+        </picture>
         <div class="product-caption">
           <div class="text-product">
             <h2 class="subtitle-product">Подушки на диван</h2>
-            <p class="text-shop">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="video product">здесь</a>
+            <p class="text-shop">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
+                class="video product">здесь</a>
             </p>
           </div>
 
@@ -442,14 +485,17 @@
               <p class="price crossed-out">1000 ₽</p>
               <p class="price">800 ₽</p>
             </div>
-          <button id="product-button" class="mailing-button">В магазин</button>
+            <button id="product-button" class="mailing-button">В магазин</button>
           </div>
         </div>
       </div>
 
       <div class="products">
-        <img class="product-img" src="images\shop-item-desk2.jpg" alt="Подушка">
-
+        <picture class="product-img">
+          <source srcset="images\shop-item-desk2.jpg" media="(min-width: 1200px)">
+          <source srcset="images\shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+          <img src="images\shop-item-mobile2.jpg" alt="Зайка">
+        </picture>
         <div class="product-caption">
           <div class="text-product">
             <h2 class="subtitle-product">Кукла «Зайчик»</h2>
@@ -465,12 +511,16 @@
       </div>
 
       <div class="products">
-        <img class="product-img" src="images\shop-item-desk3.jpg" alt="Подушка">
-
+        <picture class="product-img">
+          <source srcset="images\shop-item-desk3.jpg" media="(min-width: 1200px)">
+          <source srcset="images\shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+          <img src="images\shop-item-mobile3.jpg" alt="Рамка">
+        </picture>
         <div class="product-caption">
           <div class="text-product">
             <h2 class="subtitle-product">Шестиугольная рамка</h2>
-            <p class="text-shop">Небольшая рамка для украшения дома из видео <a href="#" class="video product">«Как сделать рамку из
+            <p class="text-shop">Небольшая рамка для украшения дома из видео <a href="#" class="video product">«Как
+                сделать рамку из
                 подручных средств за 30 минут»</a></p>
           </div>
 
@@ -487,6 +537,7 @@
 
     </div>
   </section>
+
   <footer class="footer">
     <div class="footer-wrapper">
       <address class="footer-address">
@@ -513,6 +564,9 @@
       </a>
     </div>
   </footer>
+
+
+
 </body>
 
 </html>
